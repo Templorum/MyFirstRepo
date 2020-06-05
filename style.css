@@ -1,0 +1,76 @@
+        body { 
+         margin: 0;
+         font-family: Arial, sans-serif;
+         line-height: 110%;
+        }
+        .button{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        box-shadow: 0 8px 5px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-size: 150%;
+        font-family: Schoolbook;
+        margin-top: 5%;
+        border: none;
+        }
+        .logo{
+        float: right;
+        color: rgb(0, 0, 0);
+        font-family: Schoolbook;
+        font-size: 400%;
+        margin-left: 11%;
+        margin-top: 44px;
+        }
+        .letter { 
+         color: rgb(165, 38, 10);
+         font-size: 200%;
+         font-family: serif;
+         top: 5px;
+         position: top ;
+        }
+        .header {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 2%;
+        position: fixed;
+        z-index: 2;
+        }
+        .menu {
+        float: left;
+        margin-left: 10%;
+        width: 20%;
+        padding: 0.5% 1% 0.5% 1%;
+        z-index: 1;
+        border-radius: 5px;
+        }
+
+        .main_container {
+        float: left;
+        margin-left: 2%;
+        width: 55%;
+        padding: 0.5% 1% 0.5% 1%;
+        z-index: 1;
+        border-radius: 5px;
+
+        }
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+                .main_container {
+                  -webkit-backdrop-filter: blur(10px);
+                  backdrop-filter: blur(6px);
+                  background-color: rgba(255, 255, 255, 0.3);  
+                }
+                .header {                        
+                  -webkit-backdrop-filter: blur(10px);
+                  backdrop-filter: blur(6px);
+                  background-color: rgba(255, 255, 255, 0.3);
+                }
+                .menu {                        
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(6px);
+                background-color: rgba(255, 255, 255, 0.3);
+                }
+                .warning {
+                  display: none;
+                }
+              }
